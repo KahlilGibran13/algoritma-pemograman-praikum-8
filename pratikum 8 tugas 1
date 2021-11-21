@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 21 20:49:59 2021
+
+@author: user
+NAMA : KAHLIL GIBRAN
+NIM : 064002100002
+"""
+
+def rekursif(angka = 0, jumlah = 0 , i = 1):
+ 
+ if jumlah <= 0 :
+  return 0 
+ 
+ else:
+  angka = int(input("masukan bilangan ke " + str (i) + ":"))
+ 
+ if jumlah == 1 :
+  return angka
+ 
+ else:
+  i += 1
+  return angka + rekursif(angka,jumlah - 1 ,i)
+ 
+hasil = int(input("masukan jumlah nya : "))
+nilai = rekursif (jumlah = hasil)
+print("hasil dari penjumlahan adalah : " + str(nilai))
