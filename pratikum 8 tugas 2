@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 21 22:05:39 2021
+
+@author: user
+NAMA : KAHLIL GIBRAN
+NIM : 064002100002
+"""
+
+a = int(input("masukan angka: "))
+b = int(input("mw di pangkatkan ke berapa: "))
+def pangkat(a,b):
+ 
+ if b >= 1 :
+  return a * pangkat(a, b - 1)
+ 
+ return a
+hasil = pangkat(a, b)
+
+print(f"hasil nya adalah = {hasil}")
+
